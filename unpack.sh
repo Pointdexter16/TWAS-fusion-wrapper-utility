@@ -13,5 +13,5 @@ cd ..
 conda env create -f environmentLdsc.yml
 conda env create -f environmentFiz.yml
 
-echo "alias flew='make -f $(pwd)/Makefile base=$(pwd)'" >> ~/.zshrc
+echo "alias fuse='make -f $(pwd)/Makefile base=$(pwd)'" >> ~/.zshrc
 source $(conda info --base)/etc/profile.d/conda.sh && conda activate ldsc2 && conda install -c conda-forge r-rcpp r-rcppeigen -y && Rscript inPlink.R
